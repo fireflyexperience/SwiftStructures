@@ -9,7 +9,7 @@
 import Foundation
 
 
-class HashTable {
+public class HashTable {
     
     private var buckets: Array<HashNode!>
     
