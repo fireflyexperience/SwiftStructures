@@ -11,6 +11,10 @@ import Foundation
 
 public class SwiftStack<T> {
     
+    public init() {
+        
+    }
+    
     private var top: LLNode<T>! = LLNode<T>()
 
     
