@@ -46,8 +46,8 @@
 		43C43C3D1B1F3AF400BBA6FE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C301B1F3AF400BBA6FE /* Queue.swift */; };
 		43C43C3E1B1F3AF400BBA6FE /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C311B1F3AF400BBA6FE /* Sorting.swift */; };
 		43C43C3F1B1F3AF400BBA6FE /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C311B1F3AF400BBA6FE /* Sorting.swift */; };
-		43C43C401B1F3AF400BBA6FE /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C321B1F3AF400BBA6FE /* Stack.swift */; };
-		43C43C411B1F3AF400BBA6FE /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C321B1F3AF400BBA6FE /* Stack.swift */; };
+		43C43C401B1F3AF400BBA6FE /* SwiftStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C321B1F3AF400BBA6FE /* SwiftStack.swift */; };
+		43C43C411B1F3AF400BBA6FE /* SwiftStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C321B1F3AF400BBA6FE /* SwiftStack.swift */; };
 		43C43C421B1F3AF400BBA6FE /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C331B1F3AF400BBA6FE /* Trie.swift */; };
 		43C43C431B1F3AF400BBA6FE /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C43C331B1F3AF400BBA6FE /* Trie.swift */; };
 /* End PBXBuildFile section */
@@ -90,7 +90,7 @@
 		43C43C2F1B1F3AF400BBA6FE /* PathHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PathHeap.swift; path = Source/Factories/PathHeap.swift; sourceTree = "<group>"; };
 		43C43C301B1F3AF400BBA6FE /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Source/Factories/Queue.swift; sourceTree = "<group>"; };
 		43C43C311B1F3AF400BBA6FE /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sorting.swift; path = Source/Factories/Sorting.swift; sourceTree = "<group>"; };
-		43C43C321B1F3AF400BBA6FE /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Source/Factories/Stack.swift; sourceTree = "<group>"; };
+		43C43C321B1F3AF400BBA6FE /* SwiftStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftStack.swift; path = Source/Factories/SwiftStack.swift; sourceTree = "<group>"; };
 		43C43C331B1F3AF400BBA6FE /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trie.swift; path = Source/Factories/Trie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,7 +190,7 @@
 				43C43C2F1B1F3AF400BBA6FE /* PathHeap.swift */,
 				43C43C301B1F3AF400BBA6FE /* Queue.swift */,
 				43C43C311B1F3AF400BBA6FE /* Sorting.swift */,
-				43C43C321B1F3AF400BBA6FE /* Stack.swift */,
+				43C43C321B1F3AF400BBA6FE /* SwiftStack.swift */,
 				43C43C331B1F3AF400BBA6FE /* Trie.swift */,
 			);
 			name = Factories;
@@ -332,7 +332,7 @@
 				43C43C3E1B1F3AF400BBA6FE /* Sorting.swift in Sources */,
 				43C43C361B1F3AF400BBA6FE /* HashTable.swift in Sources */,
 				43C43C1E1B1F3AE600BBA6FE /* extensions.swift in Sources */,
-				43C43C401B1F3AF400BBA6FE /* Stack.swift in Sources */,
+				43C43C401B1F3AF400BBA6FE /* SwiftStack.swift in Sources */,
 				43C43C421B1F3AF400BBA6FE /* Trie.swift in Sources */,
 				43C43C241B1F3AE600BBA6FE /* Path.swift in Sources */,
 				43C43C3A1B1F3AF400BBA6FE /* PathHeap.swift in Sources */,
@@ -355,7 +355,7 @@
 				43C43C1F1B1F3AE600BBA6FE /* extensions.swift in Sources */,
 				43C43C431B1F3AF400BBA6FE /* Trie.swift in Sources */,
 				43C43C3B1B1F3AF400BBA6FE /* PathHeap.swift in Sources */,
-				43C43C411B1F3AF400BBA6FE /* Stack.swift in Sources */,
+				43C43C411B1F3AF400BBA6FE /* SwiftStack.swift in Sources */,
 				43C43C391B1F3AF400BBA6FE /* LinkedList.swift in Sources */,
 				43C43C291B1F3AE600BBA6FE /* TrieNode.swift in Sources */,
 				43C43C351B1F3AF400BBA6FE /* Graph.swift in Sources */,

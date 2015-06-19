@@ -17,8 +17,6 @@ public class SwiftStack<T> {
     
     private var top: LLNode<T>! = LLNode<T>()
 
-    public init() {
-    }
     //TODO: Add count computed property
     
     
