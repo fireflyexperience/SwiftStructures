@@ -12,6 +12,8 @@ public class Queue<T> {
    
     private var top: QNode<T>! = QNode<T>()
     
+    public init() {
+    }
     
     //the number of items
     public var count: Int {

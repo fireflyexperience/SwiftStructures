@@ -12,6 +12,8 @@ public class Sorting {
     
     public var isKeyFound: Bool = false
     
+    public init() {
+    }
     
     /*
     binary search algorthim. Find the value at the middle index.

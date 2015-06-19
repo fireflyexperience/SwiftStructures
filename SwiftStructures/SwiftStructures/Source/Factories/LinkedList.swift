@@ -15,6 +15,8 @@ public class LinkedList<T: Equatable> {
     //create a new LLNode instance 
     private var head: LLNode<T> = LLNode<T>()
     
+    public init() {
+    }
     
     //the number of items
     public var count: Int {
