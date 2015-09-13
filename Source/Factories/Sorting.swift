@@ -10,7 +10,7 @@ import Foundation
 
 public class Sorting {
     
-    var isKeyFound: Bool = false
+    public var isKeyFound: Bool = false
     
     
     /*
@@ -18,7 +18,7 @@ public class Sorting {
     note the use of the tuple to organize the upper and lower search bounds.
     */
     
-    func binarySearch(var numberList: Array<Int>, key: Int, range:(imin: Int, imax: Int)) {
+    public func binarySearch(var numberList: Array<Int>, key: Int, range:(imin: Int, imax: Int)) {
     
     
         let midIndex: Double = round(Double((range.imin + range.imax) / 2))
@@ -50,7 +50,7 @@ public class Sorting {
     inserting numbers based on a sorted and unsorted side.
     */
     
-    func insertionSort(var numberList: Array<Int>) -> Array<Int> {
+    public func insertionSort(var numberList: Array<Int>) -> Array<Int> {
         
         var y, key : Int
         
@@ -95,7 +95,7 @@ public class Sorting {
     right side of the set after the first iteration.
     */
     
-    func bubbleSort(var numberList: Array<Int>) ->Array<Int> {
+    public func bubbleSort(var numberList: Array<Int>) ->Array<Int> {
         
         var z, passes, key : Int
         
@@ -136,7 +136,7 @@ public class Sorting {
     until it reaches the end of the array.
     */
     
-    func selectionSort(var numberList: Array<Int>) ->Array<Int> {
+    public func selectionSort(var numberList: Array<Int>) ->Array<Int> {
         
         var y : Int
         
@@ -177,7 +177,7 @@ public class Sorting {
 		// and moves values to the left or right of the pivot based on their value
 		// it works recursively so that either side will be eventually sorted back to the top
 
-		func quickSort(var hops:[Int]) -> [Int] {
+		public func quickSort(var hops:[Int]) -> [Int] {
 			
 			if (hops.count <= 1) {
 				return hops
@@ -211,7 +211,7 @@ public class Sorting {
 		can be safely moved left to right whereby the values are increasing 
         */
     
-		func mergeSort(input:[Int]) -> [Int] {
+		public func mergeSort(input:[Int]) -> [Int] {
             
             //establish the base case
 			if (input.count <= 1) {
@@ -233,7 +233,7 @@ public class Sorting {
 		}
 		
     
-		func sortForMergeSort(left:[Int], right:[Int]) -> [Int] {
+		public func sortForMergeSort(left:[Int], right:[Int]) -> [Int] {
 			
             //create a new array to place our sorted numbers
 			var sortedArray:[Int] = []
