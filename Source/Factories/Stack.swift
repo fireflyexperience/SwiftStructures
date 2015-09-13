@@ -9,13 +9,13 @@
 import Foundation
 
 
-class Stack<T> {
+public class Stack<T> {
     
     private var top: LLNode<T>! = LLNode<T>()
     
     
     //the number of items
-    var count: Int {
+    public var count: Int {
         
         
         //determine if the key or instance exist
@@ -42,7 +42,7 @@ class Stack<T> {
     
     
     //push an item onto the stack
-    func push(key: T) {
+    public func push(key: T) {
         
         
         //check for the instance
@@ -75,7 +75,7 @@ class Stack<T> {
     
     
     //remove an item from the stack
-    func pop() -> T? {
+    public func pop() -> T? {
      
         //determine if the key or instance exist
         let topitem: T? = self.top?.key
@@ -104,7 +104,7 @@ class Stack<T> {
     
     
     //retrieve the top most item
-    func peek() -> T? {
+    public func peek() -> T? {
 
         
         //determine if the key or instance exist
@@ -122,7 +122,7 @@ class Stack<T> {
     
     
     //check for the presence of a value
-    func isEmpty() -> Bool {
+    public func isEmpty() -> Bool {
         
         //determine if the key or instance exist
         if let _: T = self.top?.key {

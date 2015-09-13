@@ -10,15 +10,15 @@ import Foundation
 
 //the path class maintains objects that comprise the "frontier"
 
-class Path {
+public class Path {
     
-    var total: Int!
-    var destination: Vertex
-    var previous: Path!
+    public var total: Int!
+    public var destination: Vertex
+    public var previous: Path!
 
     
     //object initialization
-    init(){
+    public init(){
         destination = Vertex()
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bloom {
+public class Bloom {
 
 
     //initialize the filter
@@ -16,20 +16,20 @@ class Bloom {
     private var empty: Bool = true
     
     
-    init(capacity: Int) {
+    public init(capacity: Int) {
         self.bloomset = Array<Bool!>(count: capacity, repeatedValue: nil)
     }
 
 
     
     //the number of set items
-    var count: Int {
+    public var count: Int {
         return self.bloomset.count
     }
 
     
     //return set status
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         return empty
     }
     
@@ -40,7 +40,7 @@ class Bloom {
     */
 
     
-    func addWord(element: String) -> Bool {
+    public func addWord(element: String) -> Bool {
         
         
         //track position indicies with tuple
@@ -92,7 +92,7 @@ class Bloom {
     
     
     //check for membership
-    func contains(element: String) -> Bool {
+    public func contains(element: String) -> Bool {
         
         
         //track positions with tuple

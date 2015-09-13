@@ -14,7 +14,7 @@ public class Queue<T> {
     
     
     //the number of items
-    var count: Int {
+    public var count: Int {
         
         
         if (top.key == nil) {
@@ -41,7 +41,7 @@ public class Queue<T> {
     
     
     //enqueue the specified object
-    func enQueue(key: T) {
+    public func enQueue(key: T) {
         
         
         //check for the instance
@@ -74,13 +74,13 @@ public class Queue<T> {
     
     
     //retrieve the top most item
-    func peek() -> T? {
+    public func peek() -> T? {
         return top.key!
     }
     
     
     //retrieve items from the top level in O(1) constant time
-   func deQueue() -> T? {
+   public func deQueue() -> T? {
     
     
         //determine if the key or instance exist
@@ -109,7 +109,7 @@ public class Queue<T> {
     
 
    //check for the presence of a value
-   func isEmpty() -> Bool {
+   public func isEmpty() -> Bool {
     
         //determine if the key or instance exist
         if let _: T = self.top?.key {

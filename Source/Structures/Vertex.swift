@@ -11,11 +11,11 @@ import Foundation
 
 public class Vertex{
     
-    var key: String?
-    var neighbors: Array<Edge>
-    var visited: Bool = false
+    public var key: String?
+    public var neighbors: Array<Edge>
+    public var visited: Bool = false
 
-    init() {
+    public init() {
         self.neighbors = Array<Edge>()
     }
     

@@ -9,20 +9,20 @@
 import Foundation
 
 
-class HashTable {
+public class HashTable {
     
     private var buckets: Array<HashNode!>
     
     
     //initialize the buckets with nil values
-    init(capacity: Int) {
+    public init(capacity: Int) {
         self.buckets = Array<HashNode!>(count: capacity, repeatedValue:nil)
         
     }
 
     
     //add the key using the specified hash
-    func addWord(firstname: String, lastname: String) {
+    public func addWord(firstname: String, lastname: String) {
         
         var hashindex: Int!
         var fullname: String!
@@ -67,7 +67,7 @@ class HashTable {
     
     
     //determine if the word is found in the hash table
-    func findWord(firstname: String, lastname: String) -> Bool! {
+    public func findWord(firstname: String, lastname: String) -> Bool! {
         
         var hashindex: Int!
         var fullname: String!
@@ -117,7 +117,7 @@ class HashTable {
     
     
    //return the hash value to be used
-   func createHash(fullname: String) -> Int! {
+   public func createHash(fullname: String) -> Int! {
         
         var remainder: Int = 0
         var divisor: Int = 0

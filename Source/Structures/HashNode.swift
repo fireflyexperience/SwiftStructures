@@ -8,10 +8,10 @@
 
 import Foundation
 
-class HashNode {
+public class HashNode {
     
-    var firstname: String!
-    var lastname: String!
-    var next: HashNode!
+    public var firstname: String!
+    public var lastname: String!
+    public var next: HashNode!
     
 }

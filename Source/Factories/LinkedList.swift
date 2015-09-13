@@ -17,7 +17,7 @@ public class LinkedList<T: Equatable> {
     
     
    //the number of items
-   var count: Int {
+   public var count: Int {
         
             if head.key == nil {
                 return 0
@@ -43,7 +43,7 @@ public class LinkedList<T: Equatable> {
     
     
     //empty list check
-    func isEmpty() -> Bool! {
+    public func isEmpty() -> Bool! {
         
         // returns true if count is 0 or if the list's head is nil
         return self.count == 0 || head.key == nil
@@ -53,7 +53,7 @@ public class LinkedList<T: Equatable> {
     
     
     //append a new item to a linked list
-    func addLink(key: T) {
+    public func addLink(key: T) {
         
         
         //establish the head node
@@ -91,7 +91,7 @@ public class LinkedList<T: Equatable> {
 
     
     //print all keys for the class
-    func printAllKeys() {
+    public func printAllKeys() {
         
         var current: LLNode! = head
         
@@ -111,7 +111,7 @@ public class LinkedList<T: Equatable> {
     
     
     //obtain link at a specific index
-    func linkAtIndex(index: Int) ->LLNode<T>! {
+    public func linkAtIndex(index: Int) ->LLNode<T>! {
         
         //check for nil conditions
         if ((index < 0) || (index > (self.count - 1)) || (head.key == nil)) {
@@ -140,7 +140,7 @@ public class LinkedList<T: Equatable> {
     
     
     //insert at specific index
-    func addLinkAtIndex(key: T, index: Int) {
+    public func addLinkAtIndex(key: T, index: Int) {
         
         
         //check for nil conditions
@@ -213,7 +213,7 @@ public class LinkedList<T: Equatable> {
     
     
     //remove at specific index
-    func removeLinkAtIndex(index: Int) {
+    public func removeLinkAtIndex(index: Int) {
         
         //check for nil conditions
         if ((index < 0) || (index > (self.count - 1)) || (head.key == nil)) {
@@ -262,7 +262,7 @@ public class LinkedList<T: Equatable> {
     
     
   //reverse the order of a linked list
-  func reverseLinkedList() {
+  public func reverseLinkedList() {
     
     //if count == 1 or count == 0,no need to reverse
     if self.count <= 1{
@@ -307,7 +307,7 @@ public class LinkedList<T: Equatable> {
     
     
     //filter list content - higher order function
-    func filter(formula: LLNode<T> -> Bool) -> LinkedList<T>! {
+    public func filter(formula: LLNode<T> -> Bool) -> LinkedList<T>! {
         
         
         //check for instance
@@ -339,7 +339,7 @@ public class LinkedList<T: Equatable> {
     
     
     //map list content - higher order function
-    func map(formula: LLNode<T> -> T) -> LinkedList<T>! {
+    public func map(formula: LLNode<T> -> T) -> LinkedList<T>! {
         
         
         //check for instance

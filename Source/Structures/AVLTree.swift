@@ -16,13 +16,13 @@ import Foundation
 
 public class AVLTree<T: Comparable> {
     
-    var key: T?
-    var left: AVLTree?
-    var right: AVLTree?
-    var height: Int
+    public var key: T?
+    public var left: AVLTree?
+    public var right: AVLTree?
+    public var height: Int
 
     
-    init() {
+    public init() {
         //set math purposes
         self.height = -1
     }
@@ -32,7 +32,7 @@ public class AVLTree<T: Comparable> {
     
     
     //function to add item based on its value
-    func addNode(key: T) {
+    public func addNode(key: T) {
         
         //check for the root node
         if (self.key == nil) {
@@ -111,7 +111,7 @@ public class AVLTree<T: Comparable> {
     
     
     //retrieve the height of a node
-    func getNodeHeight(aNode: AVLTree!) -> Int {
+    public func getNodeHeight(aNode: AVLTree!) -> Int {
         
         if (aNode == nil) {
             return -1
@@ -125,7 +125,7 @@ public class AVLTree<T: Comparable> {
     
     
     //calculate the height of a node
-    func setNodeHeight() -> Bool {
+    public func setNodeHeight() -> Bool {
         
         
         //check for a nil condition
@@ -153,7 +153,7 @@ public class AVLTree<T: Comparable> {
 
     
     //determine if the tree is "balanced" - operations on a balanced tree is O(log n)
-    func isTreeBalanced() -> Bool {
+    public func isTreeBalanced() -> Bool {
 
         
         //check for a nil condition
@@ -178,7 +178,7 @@ public class AVLTree<T: Comparable> {
 
     
     //check to ensure node meets avl property
-    func isValidAVLTree() -> Bool! {
+    public func isValidAVLTree() -> Bool! {
         
         
         //check for valid scenario
@@ -268,7 +268,7 @@ public class AVLTree<T: Comparable> {
     
     
     //use dfs with trailing closure to update all values
-    func traverse(formula: AVLTree<T> -> T) {
+    public func traverse(formula: AVLTree<T> -> T) {
         
         
         //check for a nil condition
@@ -303,7 +303,7 @@ public class AVLTree<T: Comparable> {
     
     
     //traverse all values
-    func traverse() {
+    public func traverse() {
         
         //check for a nil condition
         if  self.key == nil {

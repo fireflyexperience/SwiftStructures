@@ -8,11 +8,11 @@
 
 import Foundation
 
-class LLNode<T> {
+public class LLNode<T> {
     
-    var key: T!
-    var next: LLNode?
-    var previous: LLNode?
+    public var key: T!
+    public var next: LLNode?
+    public var previous: LLNode?
     
 }
 

@@ -17,14 +17,14 @@ public class SwiftGraph {
     public var isDirected: Bool
     
     
-    init() {
+    public init() {
         canvas = Array<Vertex>()
         isDirected = true
     }
     
     
     //create a new vertex
-    func addVertex(key key: String) -> Vertex {
+    public func addVertex(key key: String) -> Vertex {
         
         
         //set the key
@@ -42,7 +42,7 @@ public class SwiftGraph {
     
     
     //add edge to source vertex
-    func addEdge(source source: Vertex, neighbor: Vertex, weight: Int) {
+    public func addEdge(source source: Vertex, neighbor: Vertex, weight: Int) {
         
         
         //create a new edge
@@ -85,7 +85,7 @@ public class SwiftGraph {
     /* reverse the sequence of paths given the shortest path.
        process analagous to reversing a linked list. */
 
-    func reversePath(var head: Path!, source: Vertex) -> Path! {
+    public func reversePath(var head: Path!, source: Vertex) -> Path! {
         
         if head == nil {
            return nil
@@ -123,7 +123,7 @@ public class SwiftGraph {
     
     
     //process Dijkstra's shortest path algorthim
-    func processDijkstra(source: Vertex, destination: Vertex) -> Path? {
+    public func processDijkstra(source: Vertex, destination: Vertex) -> Path? {
         
         
         var frontier: Array<Path> = Array<Path>()
@@ -223,7 +223,7 @@ public class SwiftGraph {
     
     
     ///an optimized version of Dijkstra's shortest path algorthim
-    func processDijkstraWithHeap(source: Vertex, destination: Vertex) -> Path! {
+    public func processDijkstraWithHeap(source: Vertex, destination: Vertex) -> Path! {
         
         
         let frontier: PathHeap = PathHeap()
@@ -302,7 +302,7 @@ public class SwiftGraph {
     
     
     //bfs traversal with inout closure function
-    func traverse(startingv: Vertex, formula: (inout node: Vertex) -> ()) {
+    public func traverse(startingv: Vertex, formula: (inout node: Vertex) -> ()) {
 
         
         //establish a new queue
@@ -349,7 +349,7 @@ public class SwiftGraph {
     
     
     //breadth first search
-    func traverse(startingv: Vertex) {
+    public func traverse(startingv: Vertex) {
         
         
         //establish a new queue
@@ -390,7 +390,7 @@ public class SwiftGraph {
     
     
     //use bfs with trailing closure to update all values
-    func update(startingv: Vertex, formula:(Vertex -> Bool)) {
+    public func update(startingv: Vertex, formula:(Vertex -> Bool)) {
         
         
         //establish a new queue

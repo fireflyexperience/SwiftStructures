@@ -11,13 +11,13 @@ import Foundation
 
 public class TrieNode {
     
-    var key: String!
-    var children: Array<TrieNode>
-    var isFinal: Bool
-    var level: Int
+    public var key: String!
+    public var children: Array<TrieNode>
+    public var isFinal: Bool
+    public var level: Int
 
     
-    init() {
+    public init() {
         self.children = Array<TrieNode>()
         self.isFinal = false
         self.level = 0

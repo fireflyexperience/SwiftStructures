@@ -11,10 +11,10 @@ import Foundation
 
 //generic queue node
 
-class QNode<T> {
+public class QNode<T> {
     
-    var key: T? = nil
-    var next: QNode? = nil
+    public var key: T? = nil
+    public var next: QNode? = nil
 
 }
 

@@ -11,10 +11,10 @@ import Foundation
 
 public class Edge {
     
-    var neighbor: Vertex
-    var weight: Int
+    public var neighbor: Vertex
+    public var weight: Int
     
-    init() {
+    public init() {
         weight = 0
         self.neighbor = Vertex()
     }

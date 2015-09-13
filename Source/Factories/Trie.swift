@@ -14,13 +14,13 @@ public class Trie {
     private var root: TrieNode!
     
     
-    init(){
+    public init(){
         root = TrieNode()
     }
     
     
     //finds all words based on the prefix
-    func findWord(keyword: String) -> Array<String>! {
+    public func findWord(keyword: String) -> Array<String>! {
         
         
         if (keyword.length == 0){
@@ -88,7 +88,7 @@ public class Trie {
     
     
     //builds a iterative tree of dictionary content
-    func addWord(keyword: String) {
+    public func addWord(keyword: String) {
         
         
         if keyword.length == 0 {
