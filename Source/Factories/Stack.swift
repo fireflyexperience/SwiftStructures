@@ -13,6 +13,8 @@ public class Stack<T> {
     
     private var top: LLNode<T>! = LLNode<T>()
     
+    public init() {
+    }
     
     //the number of items
     public var count: Int {
