@@ -19,10 +19,13 @@ The project features code-level examples for the following items:
 + Binary Search
 + Insertion Sort
 + Bubble Sort
++ Selection Sort
 + Quick Sort
 + Merge Sort
 + Generics
++ Closures
 + Hash Tables
++ Bloom Filters
 + Binary Search Trees
 + Tree Balancing (Rotations)
 + Tries
@@ -31,54 +34,54 @@ The project features code-level examples for the following items:
 + Dijkstra's Shortest Path
 + Heaps & Heapsort Operations
 + Depth-First Search
-+ Breath-First Search
++ Breadth-First Search
 
-I plan to write further additional examples of algorithms and all developers are welcome to follow the project through Github or online at <a href="http://www.waynewbishop.com/swift" target="_blank">www.waynewbishop.com/swift</a>. As a collaborative open-source effort, I also welcome <a href="https://twitter.com/waynewbishop" target="_blank">feedback</a> and <a href="https://help.github.com/articles/be-social" target="_blank">contribution</a> from others. 
+The Book
+--------------------
+Available in print or pdf format, <a href="http://shop.waynewbishop.com" target="_blank">The Swift Algorithms Book</a> features code and color illustrations that will benefit students and professionals. As a collaborative open-source effort, I also welcome <a href="https://twitter.com/waynewbishop" target="_blank">feedback</a> and <a href="http://shop.waynewbishop.com/pages/participate" target="_blank">contribution</a> from others. 
 
 
 Example
 --------------------
 
-```
-  /* graph traversal - breadth first search */
-  
-  func traverseGraphBFS(startingv: Vertex) {
+```swift
+    /* graph traversal - breadth first search */
     
+    func traverse(startingv: Vertex) {
+        
         //establish a new queue
-        var graphQueue: Queue<Vertex> = Queue<Vertex>()
-    
-    
+        let graphQueue: Queue<Vertex> = Queue<Vertex>()
+        
         //queue a starting vertex
         graphQueue.enQueue(startingv)
-    
-        while(!graphQueue.isEmpty()) {
+        
+        while !graphQueue.isEmpty() {
             
             //traverse the next queued vertex
-            var vitem = graphQueue.deQueue() as Vertex!
+            let vitem = graphQueue.deQueue() as Vertex!
             
             //add unvisited vertices to the queue
             for e in vitem.neighbors {
                 if e.neighbor.visited == false {
-                    println("adding vertex: \(e.neighbor.key!) to queue..")
+                    print("adding vertex: \(e.neighbor.key!) to queue..")
                     graphQueue.enQueue(e.neighbor)
                 }
             }
             
             vitem.visited = true
-            println("traversed vertex: \(vitem.key!)..")
+            print("traversed vertex: \(vitem.key!)..")
             
         } //end while
-    
-        println("graph traversal complete..")
         
-    
+        print("graph traversal complete..")
+        
     } //end function
 ```
 
 Getting Started
 --------------------
 
-Swift Structures has been optimized for Xcode 6.3 (e.g., Swift 1.2) or later. The directories are organized as follows:
+Swift Structures has been optimized for Xcode 7.0 GM Seed (e.g., Swift 2.0) or later. The directories are organized as follows:
 + Source - Code for all Swift data structures and algorithms
 + Example - An empty iOS single-view application template
 + SwiftTests - Unit tests with XCTest Framework
